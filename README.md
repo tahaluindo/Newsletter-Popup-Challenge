@@ -8,7 +8,7 @@
 
 > This project solves a [challenge](https://www.codewell.cc/challenges/60a8db35203a0e6180bb5035) from Codewell. It consists in creating
   a responsive newsletter popup template.
-  The results can be found in the [screenshots folder](https://github.com/evandrmb/Newsletter-Popup-Challenge/tree/master/Screenshots)
+  The results can be found in the [screenshots folder](https://github.com/tahaluindo/Newsletter-Popup-Challenge/tree/master/Screenshots)
 
 ## 📫 Contributing to Newsletter-Popup-Challenge
 If you want to contribute with your solution for the challenge do the following:
