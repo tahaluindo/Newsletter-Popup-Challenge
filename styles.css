@@ -1,0 +1,147 @@
+:root {
+  --blue-ribbon: #2355f2;
+  --white: #fff;
+  --dove-gray: #6e6e6e;
+  --silver-chalice: #b1b1b1;
+  --catskill-white: #f5f7fa;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.newsletter {
+  background-color: var(--blue-ribbon);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.slogan {
+  background-image: url("assets/Pattern.png");
+  color: var(--white);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-weight: 500;
+  justify-content: center;
+  padding: 2.5rem;
+  text-align: center;
+}
+.popup {
+  background-color: var(--white);
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.popup__subscribe-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__subscribe-input {
+  background-color: var(--catskill-white);
+  border: 1px solid var(--silver-chalice);
+  border-radius: 4px;
+  color: var(--silver-chalice);
+  font-weight: 300;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+  width: 100%;
+}
+.popup__subscribe-input:focus {
+  outline-style: none;
+  background-color: var(--catskill-white);
+}
+
+.popup__subscribe-button {
+  background-color: var(--blue-ribbon);
+  border-radius: 4px;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  height: 2.5rem;
+
+  padding: 0.25rem 0.5rem;
+}
+
+.popup__subscribe-button:hover {
+  filter: brightness(0.95);
+  outline: none;
+}
+.popup__promise-text {
+  color: var(--silver-chalice);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.popup__introduction-text,
+.popup__feedback-text {
+  color: var(--dove-gray);
+  font-weight: 400;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.customer-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.customer-container__details {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+
+.customer-container__role {
+  color: var(--silver-chalice);
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 720px) {
+  body {
+    background-image: url("./Assets/Background.png");
+    background-size: cover;
+    background-repeat: 0;
+  }
+
+  .newsletter {
+    align-self: center;
+    justify-self: center;
+    width: 55%;
+    height: 70%;
+    border-radius: 0.3rem;
+  }
+
+  .slogan {
+    border-radius: 0.3rem;
+  }
+
+  .popup {
+    border-radius: 0.3rem;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .newsletter {
+    width: 45%;
+    height: 70%;
+  }
+}
